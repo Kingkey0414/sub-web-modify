@@ -338,6 +338,7 @@ export default {
           "suo.yt": "https://suo.yt/short",
         },
         customBackend: {
+          "自用专属后端": "https://appalling-lotta-sevenljm-207fa4fe.koyeb.app",
           "CM负载均衡后端【vless reality+hy1+hy2】": "https://subapi.cmliussss.net",
           "CM应急备用后端【vless reality+hy1+hy2】": "https://subapi.fxxk.dedyn.io",
           "肥羊增强型后端【vless reality+hy1+hy2】": "https://url.v1.mk",
@@ -347,6 +348,7 @@ export default {
           "sub-web作者提供": "https://api.wcc.best",
         },
         backendOptions: [
+          { value: "https://appalling-lotta-sevenljm-207fa4fe.koyeb.app" },
           { value: "https://subapi.cmliussss.net" },
           { value: "https://subapi.fxxk.dedyn.io" },
           { value: "https://url.v1.mk" },
@@ -356,6 +358,15 @@ export default {
           { value: "https://api.wcc.best" },
         ],
         remoteConfig: [
+          {
+            label: "自用专属规则",
+            options: [
+              {
+                label: "自用专属_MultiCountry 识别港美地区 负载均衡",
+                value: "https://raw.githubusercontent.com/Kingkey0414/Repository/refs/heads/main/Clash-config-Online_Mini_MultiCountry.ini"
+              }
+            ]
+          },
           {
             label: "CM规则",
             options: [
@@ -1310,3 +1321,4 @@ export default {
   }
 };
 </script>
+
