@@ -348,18 +348,29 @@ export default {
           "dlj.tf": "https://dlj.tf/short",
         },
         customBackend: {
+          "自用专属后端": "https://appalling-lotta-sevenljm-207fa4fe.koyeb.app",
           "CM提供-负载均衡后端": "https://subapi.cmliussss.net",
           "CM提供-应急备用后端": "https://subapi.fxxk.dedyn.io",
           "肥羊提供-增强型后端": "https://url.v1.mk",
           "肥羊提供-备用后端": "https://api.v1.mk",
         },
         backendOptions: [
+          { value: "https://appalling-lotta-sevenljm-207fa4fe.koyeb.app" },
           { value: "https://subapi.cmliussss.net" },
           { value: "https://subapi.fxxk.dedyn.io" },
           { value: "https://url.v1.mk" },
           { value: "https://api.v1.mk" },
         ],
         remoteConfig: [
+           {
+            label: "自用专属规则",
+            options: [
+              {
+                label: "自用专属_MultiCountry 识别港美地区 负载均衡",
+                value: "https://raw.githubusercontent.com/Kingkey0414/Repository/refs/heads/main/Clash-config-Online_Mini_MultiCountry.ini"
+              }
+            ]
+          },
           {
             label: "CM规则",
             options: [
@@ -792,7 +803,7 @@ export default {
         clientType: "",
         customBackend: this.getUrlParam() == "" ? "https://url.v1.mk" : this.getUrlParam(),
         shortType: "https://v1.mk/short",
-        remoteConfig: "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online.ini",
+        remoteConfig: "https://raw.githubusercontent.com/Kingkey0414/Repository/refs/heads/main/Clash-config-Online_Mini_MultiCountry.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
